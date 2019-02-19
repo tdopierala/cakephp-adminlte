@@ -87,6 +87,17 @@ class Installer
         if (class_exists($class)) {
             $class::customizeCodeceptionBinary($event);
         }
+
+        ///vendor/almasaeed2010/adminlte/dist/css/AdminLTE.css
+        static::copyVendorFiles([
+            ['src'=>'almasaeed2010/adminlte/dist/css/AdminLTE.css'],
+            ['src'=>'almasaeed2010/adminlte/dist/js/adminlte.js'],
+            ['src'=>'almasaeed2010/adminlte/dist/css/skins/_all-skins.css'],
+
+            ['src'=>'almasaeed2010/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css'],
+            ['src'=>'almasaeed2010/adminlte/bower_components/font-awesome/css/font-awesome.min.css'],
+            ['src'=>'almasaeed2010/adminlte/bower_components/Ionicons/css/ionicons.min.css']
+        ]);
     }
 
     /**
@@ -242,5 +253,31 @@ class Installer
             return;
         }
         $io->write('Unable to update __APP_NAME__ value.');
+    }
+
+    public static function copyVendorFiles($sources)
+    {
+        $rootDir = dirname(dirname(__DIR__));
+
+        foreach($sources as $source)
+        {
+            $file = substr($source['src'], strrpos($source['src'], "/")+1);
+
+            $path = '/vendor/' . substr($source['src'], 0, strrpos($source['src'], "/")+1);
+
+            $_source = $rootDir . $path . $file;
+
+            $dest = $rootDir . "/webroot/" . $path;
+
+            if(file_exists($_source))
+            {
+                if (!file_exists($dest))
+                {
+                    mkdir($dest, 0775, true);
+                }
+
+                copy($_source, $dest . $file);
+            }
+        }
     }
 }
