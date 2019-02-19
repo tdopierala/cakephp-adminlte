@@ -5,6 +5,7 @@
 /logs/*
 /tmp/*
 /vendor/*
+/webroot/vendor/*
 
 # OS generated files #
 ######################
@@ -16,6 +17,7 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+composer.locl
 
 # Tool specific files #
 #######################
