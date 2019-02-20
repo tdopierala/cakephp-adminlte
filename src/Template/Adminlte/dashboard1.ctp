@@ -1,5 +1,3 @@
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -14,6 +12,14 @@
 
     <!-- Main content -->
     <section class="content">
+        
+        <!-- <div class="row">
+            <div class="col-lg-3 col-xs-6">
+                <pre><?= print_r($env, true) ?></pre>
+                <pre><?= print_r($request, true) ?></pre>
+            </div>
+        </div> -->
+        
       <!-- Small boxes (Stat box) -->
       <div class="row">
         <div class="col-lg-3 col-xs-6">
@@ -116,7 +122,8 @@
             <div class="box-body chat" id="chat-box">
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user4-128x128.jpg" alt="user image" class="online">
+                <?= $this->Html->image('user4-128x128.jpg', ['alt' => 'user image', 'class' => 'online']) ?>
+                <!-- <img src="img/user4-128x128.jpg" alt="user image" class="online"> -->
 
                 <p class="message">
                   <a href="#" class="name">
@@ -143,7 +150,8 @@
               <!-- /.item -->
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user3-128x128.jpg" alt="user image" class="offline">
+                <?= $this->Html->image('user3-128x128.jpg', ['alt' => 'user image', 'class' => 'offline']) ?>
+                <!-- <img src="img/user3-128x128.jpg" alt="user image" class="offline"> -->
 
                 <p class="message">
                   <a href="#" class="name">
@@ -158,7 +166,8 @@
               <!-- /.item -->
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user2-160x160.jpg" alt="user image" class="offline">
+                <?= $this->Html->image('user2-160x160.jpg', ['alt' => 'user image', 'class' => 'offline']) ?>
+                <!-- <img src="img/user2-160x160.jpg" alt="user image" class="offline"> -->
 
                 <p class="message">
                   <a href="#" class="name">
@@ -719,5 +728,3 @@
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->

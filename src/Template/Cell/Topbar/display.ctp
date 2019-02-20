@@ -29,7 +29,8 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <?= $this->Html->image('user2-160x160.jpg', ['alt' => 'User Image', 'class' => 'img-circle']) ?>
+                        <!-- <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image"> -->
                       </div>
                       <h4>
                         Support Team
@@ -42,7 +43,8 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <?= $this->Html->image('user3-128x128.jpg', ['alt' => 'User Image', 'class' => 'img-circle']) ?>
+                        <!-- <img src="img/user3-128x128.jpg" class="img-circle" alt="User Image"> -->
                       </div>
                       <h4>
                         AdminLTE Design Team
@@ -54,7 +56,8 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <?= $this->Html->image('user4-128x128.jpg', ['alt' => 'User Image', 'class' => 'img-circle']) ?>
+                        <!-- <img src="img/user4-128x128.jpg" class="img-circle" alt="User Image"> -->
                       </div>
                       <h4>
                         Developers
@@ -66,7 +69,8 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <?= $this->Html->image('user3-128x128.jpg', ['alt' => 'User Image', 'class' => 'img-circle']) ?>
+                        <!-- <img src="img/user3-128x128.jpg" class="img-circle" alt="User Image"> -->
                       </div>
                       <h4>
                         Sales Department
@@ -78,7 +82,8 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <?= $this->Html->image('user4-128x128.jpg', ['alt' => 'User Image', 'class' => 'img-circle']) ?>
+                        <!-- <img src="img/user4-128x128.jpg" class="img-circle" alt="User Image"> -->
                       </div>
                       <h4>
                         Reviewers
@@ -152,8 +157,7 @@
                         <small class="pull-right">20%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">20% Complete</span>
                         </div>
                       </div>
@@ -167,8 +171,7 @@
                         <small class="pull-right">40%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">40% Complete</span>
                         </div>
                       </div>
@@ -182,8 +185,7 @@
                         <small class="pull-right">60%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">60% Complete</span>
                         </div>
                       </div>
@@ -197,8 +199,7 @@
                         <small class="pull-right">80%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">80% Complete</span>
                         </div>
                       </div>
@@ -215,13 +216,15 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <?= $this->Html->image('user2-160x160.jpg', ['alt' => 'User Image', 'class' => 'user-image']) ?>
+                <!-- <img src="img/user2-160x160.jpg" class="user-image" alt="User Image"> -->
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <?= $this->Html->image('user2-160x160.jpg', ['alt' => 'User Image', 'class' => 'img-circle']) ?>
+                <!-- <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image"> -->
 
                 <p>
                   Alexander Pierce - Web Developer
