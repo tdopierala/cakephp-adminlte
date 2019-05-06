@@ -29,5 +29,27 @@ class AdminlteController extends AppController
         $this->render($page);
     }
 
+    public function layout(){
+
+        $param = isset($this->request->params['pass'][0]) ? $this->request->params['pass'][0] : 0;
+
+        switch($param){
+            case 'top-nav':     $page = "layout_topnav"; break;
+            case 'boxed':       $page = "layout_boxed"; break;
+            case 'fixed':       $page = "layout_fixed"; break;
+            case 'collapsed-sidebar': $page = "layout_collapsedsidebar"; break;
+
+            default: $page = "top-nav";
+        }
+        
+        $this->viewBuilder()->setLayout('adminlte');
+        $this->set([
+            'env' => $this->request->env('REQUEST_URI'),
+            'request' => $this->request
+        ]);
+
+        $this->render($page);
+    }
+
 
 }
