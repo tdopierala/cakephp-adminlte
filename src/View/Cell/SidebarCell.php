@@ -87,7 +87,7 @@ class SidebarCell extends Cell
                         ],[
                             'name' => 'Widgets',
                             'icon' => 'fa-th',
-                            'url' => 'admin/widgets',
+                            'url' => '/adminlte/widgets',
                             'small' => [
                                 ['i' => 'label pull-right bg-green', 'text' => 'new']
                             ],
@@ -161,7 +161,7 @@ class SidebarCell extends Cell
                         ],[
                             'name' => 'Calendar',
                             'icon' => 'fa-calendar',
-                            'url' => 'admin/calendar',
+                            'url' => '/adminlte/calendar',
                             'small' => [
                                 ['i' => 'label pull-right bg-red', 'text' => '3'],
                                 ['i' => 'label pull-right bg-blue', 'text' => '17']
@@ -170,7 +170,7 @@ class SidebarCell extends Cell
                         ],[
                             'name' => 'Mailbox',
                             'icon' => 'fa-envelope',
-                            'url' => 'admin/mailbox',
+                            'url' => '/adminlte/mailbox',
                             'small' => [
                                 ['i' => 'label pull-right bg-yellow', 'text' => '12'],
                                 ['i' => 'label pull-right bg-green', 'text' => '16'],

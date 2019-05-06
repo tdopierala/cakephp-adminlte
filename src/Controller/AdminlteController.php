@@ -51,5 +51,15 @@ class AdminlteController extends AppController
         $this->render($page);
     }
 
+    public function widgets(){
+
+        $this->viewBuilder()->setLayout('adminlte');
+        $this->set([
+            'env' => $this->request->env('REQUEST_URI'),
+            'request' => $this->request
+        ]);
+
+    }
+
 
 }

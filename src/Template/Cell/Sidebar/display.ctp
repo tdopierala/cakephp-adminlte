@@ -62,10 +62,11 @@
                 }
 
                 $href = $branch['url'] != null ? $branch['url'] : '#';
-                $class = $active ? 'active' : '';
+                $tree_class = $branch['url'] == null ? 'treeview' : '';
+                $active_class = $active ? 'active' : '';
 
                 $out .= '
-                    <li class="' . $class . ' treeview">
+                    <li class="' . $active_class . ' ' . $tree_class . '">
                         <a href="' . $href . '">
                             <i class="fa ' . $branch['icon'] . '"></i> <span>' . $branch['name'] . '</span>
                             <span class="pull-right-container">';
