@@ -44,6 +44,8 @@
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <?= $this->fetch('script') ?>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
@@ -106,13 +108,13 @@
     <!-- <script src="dist/js/adminlte.min.js"></script> -->
 
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <?= $this->Html->script('/vendor/almasaeed2010/adminlte/dist/js/pages/dashboard.js') ?>
+    
     <!-- <script src="dist/js/pages/dashboard.js"></script> -->
 
     <!-- AdminLTE for demo purposes -->
     <?= $this->Html->script('/vendor/almasaeed2010/adminlte/dist/js/demo.js') ?>
     <!-- <script src="dist/js/demo.js"></script> -->
 
-    <?= $this->fetch('script') ?>
+    <?= $this->fetch('scriptBottom') ?>
 </body>
 </html>

@@ -1,3 +1,8 @@
+<?php
+
+  $this->Html->script('/vendor/almasaeed2010/adminlte/dist/js/pages/dashboard.js', ['block' => 'scriptBottom']);
+
+?>
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>

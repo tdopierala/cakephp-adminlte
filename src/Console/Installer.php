@@ -93,6 +93,7 @@ class Installer
             ['src'=>'almasaeed2010/adminlte/dist/css/AdminLTE.css'],
             ['src'=>'almasaeed2010/adminlte/dist/js/adminlte.js'],
             ['src'=>'almasaeed2010/adminlte/dist/js/pages/dashboard.js'],
+            ['src'=>'almasaeed2010/adminlte/dist/js/pages/dashboard2.js'],
             ['src'=>'almasaeed2010/adminlte/dist/js/demo.js'],
             ['src'=>'almasaeed2010/adminlte/dist/css/skins/_all-skins.css'],
 
@@ -130,7 +131,9 @@ class Installer
             ['src'=>'almasaeed2010/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js'],
             ['src'=>'almasaeed2010/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js'],
             ['src'=>'almasaeed2010/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js'],
-            ['src'=>'almasaeed2010/adminlte/bower_components/fastclick/lib/fastclick.js']
+            ['src'=>'almasaeed2010/adminlte/bower_components/fastclick/lib/fastclick.js'],
+            ['src'=>'almasaeed2010/adminlte/bower_components/chart.js/Chart.js']
+            
 
         ]);
     }
