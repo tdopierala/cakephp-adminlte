@@ -39,7 +39,7 @@ class AdminlteController extends AppController
             case 'fixed':       $page = "layout_fixed"; break;
             case 'collapsed-sidebar': $page = "layout_collapsedsidebar"; break;
 
-            default: $page = "top-nav";
+            default: $page = "layout_topnav";
         }
         
         $this->viewBuilder()->setLayout('adminlte');
@@ -71,7 +71,28 @@ class AdminlteController extends AppController
             case 'flot':       $page = "chart_flot"; break;
             case 'inline': $page = "chart_inline"; break;
 
-            default: $page = "top-nav";
+            default: $page = "chart_chartjs";
+        }
+        
+        $this->viewBuilder()->setLayout('adminlte');
+        $this->set([
+            'env' => $this->request->env('REQUEST_URI'),
+            'request' => $this->request
+        ]);
+
+        $this->render($page);
+    }
+
+    public function uielements(){
+
+        $param = isset($this->request->params['pass'][0]) ? $this->request->params['pass'][0] : 0;
+
+        switch($param){
+            case 'general':     $page = "ui_general"; break;
+            case 'advanced':       $page = "ui_advanced"; break;
+            case 'editors':       $page = "ui_editors"; break;
+
+            default: $page = "ui_general";
         }
         
         $this->viewBuilder()->setLayout('adminlte');
