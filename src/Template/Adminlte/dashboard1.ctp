@@ -1,7 +1,24 @@
 <?php
+	
+	$this->Html->css('/vendor/almasaeed2010/adminlte/bower_components/morris.js/morris.css', ['block' => true]);
+	$this->Html->css('/vendor/almasaeed2010/adminlte/bower_components/jvectormap/jquery-jvectormap.css', ['block' => true]);
+	$this->Html->css('/vendor/almasaeed2010/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css', ['block' => true]);
+	$this->Html->css('/vendor/almasaeed2010/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.css', ['block' => true]);
+	$this->Html->css('/vendor/almasaeed2010/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css', ['block' => true]);
 
-  $this->Html->script('/vendor/almasaeed2010/adminlte/dist/js/pages/dashboard.js', ['block' => 'scriptBottom']);
-
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/raphael/raphael.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/morris.js/morris.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/jquery-knob/dist/jquery.knob.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/moment/min/moment.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js', ['block' => 'scriptBottom']);
+	
+	$this->Html->script('/vendor/almasaeed2010/adminlte/dist/js/pages/dashboard.js', ['block' => 'scriptBottom']);
 ?>
     <!-- Content Header (Page header) -->
     <section class="content-header">

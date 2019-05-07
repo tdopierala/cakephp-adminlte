@@ -1,7 +1,13 @@
 <?php
 
-    $this->Html->script('/vendor/almasaeed2010/adminlte/dist/js/pages/dashboard2.js', ['block' => 'scriptBottom']);
-    $this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/chart.js/Chart.js', ['block' => 'scriptBottom']);
+	$this->Html->css('/vendor/almasaeed2010/adminlte/bower_components/jvectormap/jquery-jvectormap.css', ['block' => true]);
+
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/dist/js/pages/dashboard2.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/chart.js/Chart.js', ['block' => 'scriptBottom']);
 
 ?>
 <!-- Content Header (Page header) -->

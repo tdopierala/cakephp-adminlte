@@ -1,7 +1,9 @@
 <?php
-
-    $this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/morris.js/morris.min.js', ['block' => 'scriptBottom']);
-    $this->Html->script('/js/demo.morris.js', ['block' => 'scriptBottom']);
+	$this->Html->css('/vendor/almasaeed2010/adminlte/bower_components/morris.js/morris.css', ['block' => true]);
+	
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/raphael/raphael.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/vendor/almasaeed2010/adminlte/bower_components/morris.js/morris.min.js', ['block' => 'scriptBottom']);
+	$this->Html->script('/js/demo.morris.js', ['block' => 'scriptBottom']);
 
 ?>
     <section class="content-header">
