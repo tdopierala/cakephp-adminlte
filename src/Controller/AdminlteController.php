@@ -61,5 +61,27 @@ class AdminlteController extends AppController
 
     }
 
+    public function charts(){
+
+        $param = isset($this->request->params['pass'][0]) ? $this->request->params['pass'][0] : 0;
+
+        switch($param){
+            case 'chartjs':     $page = "chart_chartjs"; break;
+            case 'morris':       $page = "chart_morris"; break;
+            case 'flot':       $page = "chart_flot"; break;
+            case 'inline': $page = "chart_inline"; break;
+
+            default: $page = "top-nav";
+        }
+        
+        $this->viewBuilder()->setLayout('adminlte');
+        $this->set([
+            'env' => $this->request->env('REQUEST_URI'),
+            'request' => $this->request
+        ]);
+
+        $this->render($page);
+    }
+
 
 }

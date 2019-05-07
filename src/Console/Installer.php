@@ -132,8 +132,12 @@ class Installer
             ['src'=>'almasaeed2010/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js'],
             ['src'=>'almasaeed2010/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js'],
             ['src'=>'almasaeed2010/adminlte/bower_components/fastclick/lib/fastclick.js'],
-            ['src'=>'almasaeed2010/adminlte/bower_components/chart.js/Chart.js']
-            
+            ['src'=>'almasaeed2010/adminlte/bower_components/chart.js/Chart.js'],
+            ['src'=>'almasaeed2010/adminlte/bower_components/Flot/jquery.flot.js'],
+            ['src'=>'almasaeed2010/adminlte/bower_components/Flot/jquery.flot.resize.js'],
+            ['src'=>'almasaeed2010/adminlte/bower_components/Flot/jquery.flot.pie.js'],
+            ['src'=>'almasaeed2010/adminlte/bower_components/Flot/jquery.flot.categories.js'],
+            ['src'=>'almasaeed2010/adminlte/bower_components/jquery-knob/js/jquery.knob.js']
 
         ]);
     }
@@ -315,6 +319,8 @@ class Installer
                 }
 
                 copy($_source, $dest . $file);
+
+                echo "file " . $file . " was copied\n";
             }
         }
     }

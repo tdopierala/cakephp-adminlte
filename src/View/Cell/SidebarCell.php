@@ -106,7 +106,7 @@ class SidebarCell extends Cell
                                     'submenu' => null
                                 ],[
                                     'name' => 'Morris',
-                                    'url' => '/adminlte/charts/boxed',
+                                    'url' => '/adminlte/charts/morris',
                                     'submenu' => null
                                 ],[
                                     'name' => 'Flot',
