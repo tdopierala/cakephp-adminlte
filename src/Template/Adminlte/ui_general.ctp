@@ -1,4 +1,9 @@
-<section class="content-header">
+<?php
+
+	$this->Html->css('/css/demo.uigeneral.css', ['block' => true]);
+
+?>
+	<section class="content-header">
       <h1>
         General UI
         <small>Preview of UI elements</small>

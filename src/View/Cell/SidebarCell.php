@@ -127,16 +127,28 @@ class SidebarCell extends Cell
                             ],
                             'submenu' => [ //submenu level
                                 [
-                                    'name' => 'General Elements',
+                                    'name' => 'General',
                                     'url' => '/adminlte/uielements/general',
                                     'submenu' => null
                                 ],[
-                                    'name' => 'Advanced Elements',
-                                    'url' => '/adminlte/uielements/advanced',
+                                    'name' => 'Icons',
+                                    'url' => '/adminlte/uielements/icons',
                                     'submenu' => null
                                 ],[
-                                    'name' => 'Editors',
-                                    'url' => '/adminlte/uielements/editors',
+                                    'name' => 'Buttons',
+                                    'url' => '/adminlte/uielements/buttons',
+                                    'submenu' => null
+                                ],[
+                                    'name' => 'Sliders',
+                                    'url' => '/adminlte/uielements/sliders',
+                                    'submenu' => null
+                                ],[
+                                    'name' => 'Timeline',
+                                    'url' => '/adminlte/uielements/timeline',
+                                    'submenu' => null
+                                ],[
+                                    'name' => 'Modals',
+                                    'url' => '/adminlte/uielements/modals',
                                     'submenu' => null
                                 ]
                             ]

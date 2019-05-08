@@ -89,8 +89,11 @@ class AdminlteController extends AppController
 
         switch($param){
             case 'general':     $page = "ui_general"; break;
-            case 'advanced':       $page = "ui_advanced"; break;
-            case 'editors':       $page = "ui_editors"; break;
+            case 'icons':       $page = "ui_icons"; break;
+            case 'buttons':       $page = "ui_buttons"; break;
+            case 'sliders':       $page = "ui_sliders"; break;
+            case 'timeline':       $page = "ui_timeline"; break;
+            case 'modals':       $page = "ui_modals"; break;
 
             default: $page = "ui_general";
         }
